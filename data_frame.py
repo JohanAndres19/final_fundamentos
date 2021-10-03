@@ -14,12 +14,10 @@ class Data_frame:
             return "No a Seleccionado los datos, por favor escoja  datos validos"
         else:
             if Proyecto =='Todos los proyectos'and year!=0 and sexo!='' and semestre!=0:
-               # datos = self.data_frame.groupby(['Programa Académico','Año','Sexo','Semestre'],as_index=False).agg({
-                #    "Graduados":"sum"
-               # })
                 retorno =self.data_frame[(self.data_frame['Año']==year)&(self.data_frame['Sexo']==sexo)&(self.data_frame['Semestre']==semestre)]
                 return retorno
-            else:
+            elif year!=0 or sexo!=''or Proyecto!=''or semestre!=0:
+                
                 return'Por favor rellene todos los campos ade mas del proyecto'
 
 

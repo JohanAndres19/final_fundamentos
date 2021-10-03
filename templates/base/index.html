@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <title>Data frame</title>
     </head>
     <body>
@@ -17,11 +18,12 @@
             <option value="General">General</option>
             <option value="Comparacion">Comparacion</option>
         </select>
-        <script src="static/js/cambiarfiltro.js"></script>
+        <script src="static/js/cambiarfil.js"></script>
         <div>
             <form method="POST">
-                {% block contenedor %}
-                {% endblock contenedor %}
+                {% block container %}
+                {% endblock container %}
+                <input type="submit">
             </form>
         </div>
         

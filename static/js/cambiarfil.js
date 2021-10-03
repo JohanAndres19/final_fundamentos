@@ -6,6 +6,10 @@ function Seleccion(){
     var cod = document.getElementById("opcion").value;
     console.log(cod)
     if(cod=="General"){
-        alert("prueba")
+        location.href='/prueba'  
+    }
+    if(cod=="Comparacion"){
+        location.href='/prueba'
+        
     }
 }
