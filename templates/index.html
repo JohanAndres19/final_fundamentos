@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data frame</title>
+    </head>
+    <body>
+        <h1>GRADUADOS U DISTRITAL 2001-2018</h1>
+        <p>
+            Conozca la informacion relevante de los graduados de cada proyecto curricular
+            en el periodo 2001-2018
+        </p>
+        <select id="opcion">
+            <option value=""></option>
+            <option value="General">General</option>
+            <option value="Comparacion">Comparacion</option>
+        </select>
+        <script src="static/js/cambiarfiltro.js"></script>
+        <div>
+            <form method="POST">
+                {% block contenedor %}
+                {% endblock contenedor %}
+            </form>
+        </div>
+        
+   </body>
+</html>
